@@ -25,17 +25,10 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Seção 1: Login
               LoginSection(),
-
               SizedBox(height: 30),
-
-              // Seção 2: Visão Geral Vendas
               SalesOverviewSection(),
-
               SizedBox(height: 30),
-
-              // Seção 3: Melhores Produtos e Vendas Recentes
               BestProductsAndRecentSalesSection(),
             ],
           ),
@@ -44,8 +37,6 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-// Login Section
 class LoginSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -139,7 +130,6 @@ class LoginSection extends StatelessWidget {
   }
 }
 
-// Sales Overview Section
 class SalesOverviewSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -225,15 +215,12 @@ class MetricCard extends StatelessWidget {
     );
   }
 }
-
-// Best Products and Recent Sales Section
 class BestProductsAndRecentSalesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Best Products
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -269,8 +256,6 @@ class BestProductsAndRecentSalesSection extends StatelessWidget {
           ),
         ),
         SizedBox(height: 20),
-
-        // Recent Sales
         Text(
           'Recente Vendas',
           style: TextStyle(
